@@ -10,6 +10,11 @@ The original package [react-native-obfuscating-transformer](https://github.com/j
 
     npm i git+https://github.com/AustinZuniga/react-native-obfuscator.git
 
+
+**Install needed npm packages**
+
+    npm i babylon babel-traverse
+
 ## Usage
 
 ### React Native >= 0.59
@@ -26,9 +31,6 @@ module.exports = {
       },
     }),
     babelTransformerPath: require.resolve("./transformer")
-    // getTransformModulePath: () => {
-    //   return require.resolve('./transformer');
-    // },
   },
 };
 ```

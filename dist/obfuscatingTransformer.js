@@ -70,7 +70,7 @@ function obfuscatingTransformer(_a) {
                 if (otherOptions.emitObfuscatedFiles) {
                     var emitDir = path.dirname(props.filename);
                     var filename = extendFileExtension_1.extendFileExtension(path.basename(props.filename), "obfuscated");
-                    fs.writeFileSync(path.join(emitDir, filename), code);
+                    fs.writeFileSync(path.join(emitDir, filename),  obfuscateCode_1.obfuscateCode(code, obfuscatorOptions));
                 }
                 return getMetroTransformer_1.maybeTransformMetroResult(result, obfuscateCode_1.obfuscateCodePreservingSourceMap(code, map, props.filename, props.src, obfuscatorOptions));
             }
