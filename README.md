@@ -63,7 +63,7 @@ module.exports = obfuscatingTransformer({
     shuffleStringArray: true, // default true
     sourceMapMode: 'separate', // default seperate
     splitStrings: true,  // default false
-    splitStringsChunckLength: 10, // default 10
+    splitStringsChunkLength: 10, // default 10
     stringArray: true, // default true
     stringArrayEncoding: 'rc4', // default false
     stringArrayThreshold: 0.75, // default 0.8
@@ -159,7 +159,7 @@ interface ObfuscatorOptions {
   shuffleStringArray?: boolean
   sourceMapMode?: "separate" | "inline"
   splitStrings?: boolean,
-  splitStringsChunckLength: 10, // default 10
+  splitStringsChunkLength: 10, // default 10
   stringArray?: boolean
   stringArrayEncoding?: boolean|string
   stringArrayThreshold?: 0.75
